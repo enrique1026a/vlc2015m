@@ -142,6 +142,7 @@ class FrontController
     public function renderLayout()
     {
         $content = $this->response;
+        $request=$this->request;
         require_once('../modules/application/src/application/layouts/'.$this->layout.'.phtml');        
     }
 }

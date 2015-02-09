@@ -5,5 +5,6 @@ return array (
                 'user'=>'php',
                 'password'=>'1234',
                 'database'=>'crud'),
+    'adapter'=>'txt',
     
 );

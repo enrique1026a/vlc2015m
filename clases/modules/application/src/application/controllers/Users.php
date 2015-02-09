@@ -76,6 +76,7 @@ implements \core\models\ControllerInterface
     public function select($request, $config)
     {
         $users = new UsersMapper();
+        $users->setConfig($config);
         $usuarios = $users->getUsers();
         $content = Views::renderView(__METHOD__,
                                                   $this->getConfig(), 

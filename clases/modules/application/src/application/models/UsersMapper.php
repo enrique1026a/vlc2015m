@@ -32,6 +32,7 @@ class UsersMapper
 
 	public function getUsers()
     {
+
         $gatewayname = 'application\\models\\Gateways\\'.
                         $this->mapper.
                         $this->getConfig()['adapter'];
