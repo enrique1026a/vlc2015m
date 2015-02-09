@@ -33,7 +33,7 @@ class Views
 //         print_r($pos[1]);
 //         echo "</pre>";
         ob_start();
-        include($config['view_path'].'/'.
+        include($config->application->view_path.'/'.
             $controller.'/'.
             $pos[1].'.phtml'
         );
